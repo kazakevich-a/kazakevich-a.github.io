@@ -1,0 +1,8 @@
+# JetBrains IDE
+.idea
+
+# Dependency directories
+node_modules
+
+# Development
+styles/styles.css
