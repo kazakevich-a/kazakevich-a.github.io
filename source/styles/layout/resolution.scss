@@ -1,0 +1,8 @@
+.resolution {
+  @include media("mobile") {
+    display: none;
+  }
+
+  &_text {
+  }
+}

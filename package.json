@@ -3,8 +3,8 @@
     "build": "npm run sass:write && npm run prettier:fix && npm run stylelint:fix",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "sass:write": "sass --no-source-map source/styles/styles.scss styles/styles.css --style compressed",
-    "sass:watch": "sass --no-source-map --watch source/styles/styles.scss:styles/styles.css --style compressed",
+    "sass:write": "sass --no-source-map source/styles/styles.scss asset/css/main.css --style compressed",
+    "sass:watch": "sass --no-source-map --watch source/styles/styles.scss:asset/css/main.css --style compressed",
     "server": "http-server",
     "stylelint:fix": "stylelint --fix source/styles/**/*.scss"
   },

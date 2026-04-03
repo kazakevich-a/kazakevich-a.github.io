@@ -5,4 +5,4 @@
 node_modules
 
 # Development
-styles/styles.css
+asset/css/*.css
