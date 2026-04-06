@@ -1,8 +1,23 @@
 .resolution {
-  @include media("mobile") {
+  align-items: center;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  display: flex;
+  height: 100dvh;
+  justify-content: center;
+  left: 0;
+  padding: 12px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 5;
+
+  @media all and (min-width: 375px) {
     display: none;
   }
 
-  &_text {
+  &__txt {
+    text-align: center;
+    line-height: 20px;
   }
 }

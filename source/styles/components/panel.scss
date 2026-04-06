@@ -1,0 +1,15 @@
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__count,
+  &__new {
+    font-weight: 700;
+    padding: 12px 10px;
+  }
+
+  &__new {
+    color: var(--color-link);
+  }
+}

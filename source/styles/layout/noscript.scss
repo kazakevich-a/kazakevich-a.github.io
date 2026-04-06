@@ -1,4 +1,19 @@
-.noscript-section {
-  &_text {
+.noscript {
+  align-items: center;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  display: flex;
+  height: 100dvh;
+  justify-content: center;
+  left: 0;
+  padding: 12px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 5;
+
+  &__txt {
+    text-align: center;
+    line-height: 20px;
   }
 }

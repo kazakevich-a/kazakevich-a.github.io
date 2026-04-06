@@ -1,0 +1,97 @@
+.advert {
+  padding: 12px 10px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__title {
+    color: var(--color-text-secondary);
+    font: {
+      size: 19px;
+      weight: 700;
+    }
+    line-height: 22px;
+  }
+
+  &__number {
+    color: var(--color-text-gray);
+    font-size: 17px;
+
+    &::before {
+      content: "№ ";
+    }
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__price-byn {
+    color: var(--color-text-secondary);
+
+    &::after {
+      content: " BYN";
+    }
+  }
+
+  &__price-usd {
+    color: var(--color-text-gray);
+    font-size: 13px;
+
+    &::after {
+      content: " USD";
+    }
+  }
+
+  &__state {
+    color: var(--color-text-secondary);
+  }
+
+  &__article {
+    font-size: 13px;
+    color: var(--color-text-gray);
+  }
+
+  &__views {
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      margin-right: 5px;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: {
+        image: url("../icon/eye.svg");
+        repeat: no-repeat;
+        size: contain;
+      }
+    }
+  }
+
+  &__phone-views {
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      margin-right: 5px;
+      height: 24px;
+      background: {
+        image: url("../icon/phone.svg");
+        repeat: no-repeat;
+        size: contain;
+      }
+    }
+  }
+}
