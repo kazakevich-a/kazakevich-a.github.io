@@ -1,9 +1,0 @@
-.advert-list {
-  display: grid;
-  grid-column: auto;
-
-  &__item {
-    background-color: var(--color-background-secondary);
-    border-radius: var(--border-radius);
-  }
-}

@@ -1,12 +1,13 @@
 .panel {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   &__count,
   &__new {
-    font-weight: 700;
     padding: 12px 10px;
+    font-weight: 700;
+    white-space: nowrap;
   }
 
   &__new {

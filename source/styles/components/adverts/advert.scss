@@ -1,5 +1,7 @@
 .advert {
+  background-color: var(--color-background-secondary);
   padding: 12px 10px;
+  border-radius: var(--border-radius);
 
   &__header {
     display: flex;
@@ -8,12 +10,12 @@
   }
 
   &__title {
+    line-height: 22px;
     color: var(--color-text-secondary);
     font: {
       size: 19px;
       weight: 700;
     }
-    line-height: 22px;
   }
 
   &__number {
@@ -58,8 +60,8 @@
   }
 
   &__views {
-    color: var(--color-text-secondary);
     display: flex;
+    color: var(--color-text-secondary);
     align-items: center;
 
     &::before {
@@ -77,8 +79,8 @@
   }
 
   &__phone-views {
-    color: var(--color-text-secondary);
     display: flex;
+    color: var(--color-text-secondary);
     align-items: center;
 
     &::before {
