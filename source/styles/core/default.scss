@@ -51,6 +51,10 @@ a {
     color: var(--color-link-active);
   }
 
+  &:hover {
+    color: var(--color-link-focus);
+  }
+
   &:focus {
     outline: none;
   }
@@ -74,6 +78,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  color: inherit;
   cursor: pointer;
   background: none;
   border: none;

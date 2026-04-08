@@ -1,5 +1,40 @@
 .user-messages {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-auto-rows: auto 1fr;
+  gap: 4px;
   min-height: 160px;
-  border-radius: var(--border-radius);
+  padding: 22px 10px 14px;
   background-color: var(--color-background-secondary);
+  border-radius: var(--border-radius);
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: "";
+    display: block;
+    width: 176px;
+    height: 130px;
+    background: {
+      image: url("../image/messages.svg");
+      repeat: no-repeat;
+      position: center;
+    }
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    font: {
+      size: 23px;
+      weight: 600;
+    }
+    line-height: 26px;
+  }
+
+  &__note {
+    line-height: 20px;
+    color: var(--color-text-secondary);
+  }
 }

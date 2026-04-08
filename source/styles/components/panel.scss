@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 22px;
 
   &__count,
   &__new {
@@ -12,5 +13,13 @@
 
   &__new {
     color: var(--color-link);
+
+    &:active {
+      color: var(--color-link-active);
+    }
+
+    &:hover {
+      color: var(--color-link-focus);
+    }
   }
 }
