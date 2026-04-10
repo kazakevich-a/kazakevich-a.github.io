@@ -2,11 +2,100 @@
   background-color: var(--color-background-secondary);
   padding: 12px 10px;
   border-radius: var(--border-radius);
+  display: grid;
+  grid-template-columns: auto auto min-content;
+  grid-template-rows: repeat(4, auto);
+
+  &__checkbox {
+    display: none;
+  }
 
   &__header {
+    grid-area: 1 / 1 / 2 / 3;
     display: flex;
     flex-direction: column;
     gap: 2px;
+  }
+
+  &__img {
+    grid-area: 1 / 3 / 2 / 4;
+    align-self: center;
+    justify-self: end;
+    box-shadow: inset 0 0 0 1px rgba(var(--box-shadow) 0.05);
+  }
+
+  &__price {
+    grid-area: 2 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+  }
+
+  &__status {
+    display: none;
+  }
+
+  &__condition {
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: end;
+    color: var(--color-text-secondary);
+  }
+
+  &__article {
+    grid-area: 3 / 2 / 4 / 3;
+    align-self: start;
+    font-size: 13px;
+    color: var(--color-text-gray);
+  }
+
+  &__views {
+    grid-area: 2 / 3 / 3 / 4;
+    align-self: end;
+    display: flex;
+    color: var(--color-text-secondary);
+    align-items: center;
+
+    &::before {
+      content: "";
+      margin-right: 5px;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: {
+        image: url("../icon/eye.svg");
+        repeat: no-repeat;
+        size: contain;
+      }
+    }
+  }
+
+  &__phone-views {
+    grid-area: 3 / 3 / 4 / 4;
+    align-self: start;
+    display: flex;
+    color: var(--color-text-secondary);
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      margin-right: 5px;
+      height: 24px;
+      background: {
+        image: url("../icon/phone.svg");
+        repeat: no-repeat;
+        size: contain;
+      }
+    }
+  }
+
+  &__date {
+    grid-area: 4 / 1 / 5 / 4;
+    color: var(--color-text-gray);
+    font-size: 13px;
+    margin-top: 4px;
   }
 
   &__title {
@@ -27,12 +116,6 @@
     }
   }
 
-  &__price {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
   &__price-byn {
     color: var(--color-text-secondary);
 
@@ -50,50 +133,7 @@
     }
   }
 
-  &__state {
-    color: var(--color-text-secondary);
-  }
-
-  &__article {
-    font-size: 13px;
-    color: var(--color-text-gray);
-  }
-
-  &__views {
-    display: flex;
-    color: var(--color-text-secondary);
-    align-items: center;
-
-    &::before {
-      content: "";
-      margin-right: 5px;
-      display: block;
-      width: 24px;
-      height: 24px;
-      background: {
-        image: url("../icon/eye.svg");
-        repeat: no-repeat;
-        size: contain;
-      }
-    }
-  }
-
-  &__phone-views {
-    display: flex;
-    color: var(--color-text-secondary);
-    align-items: center;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 24px;
-      margin-right: 5px;
-      height: 24px;
-      background: {
-        image: url("../icon/phone.svg");
-        repeat: no-repeat;
-        size: contain;
-      }
-    }
+  &__menu {
+    display: none;
   }
 }
